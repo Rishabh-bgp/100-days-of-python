@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ todo.name }} - To-do</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem}li{list-style:none;padding:.4rem 0;border-bottom:1px solid #eee;display:flex;gap:.5rem;align-items:center}
+.done span{text-decoration:line-through;color:#999}.overdue span{color:#c00}nav a{margin-right:.75rem}form.inline{display:inline}</style></head><body>
+<nav>{% for l in lists %}<a href="{{ url_for('show_list', list_id=l.id) }}"{% if l.id == todo.id %} style="font-weight:bold"{% endif %}>{{ l.name }}</a>{% endfor %}
+<form class="inline" method="post" action="{{ url_for('new_list') }}"><input name="name" placeholder="New list" size="10"><button>+</button></form></nav>
+<h1>{{ todo.name }}</h1>
+<form method="post" action="{{ url_for('add_task', list_id=todo.id) }}"><input name="text" placeholder="What needs doing?" required size="40">
+<input type="date" name="due"><button>Add</button></form>
+<p>Show: {% for s in ['all','open','done'] %}<a href="?status={{ s }}">{{ s if s != status else '[' ~ s ~ ']' }}</a> {% endfor %}</p>
+<ul>{% for t in tasks %}<li class="{{ 'done' if t.done }} {{ 'overdue' if t.overdue }}">
+<form class="inline" method="post" action="{{ url_for('toggle', task_id=t.id) }}"><button title="toggle">{{ '✔' if t.done else '○' }}</button></form>
+<span>{{ t.text }}{% if t.due %} <small>(due {{ t.due }})</small>{% endif %}</span>
+<form class="inline" method="post" action="{{ url_for('delete', task_id=t.id) }}"><button title="delete">✘</button></form></li>
+{% else %}<li>Nothing here yet.</li>{% endfor %}</ul></body></html>

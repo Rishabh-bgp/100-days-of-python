@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block content %}<h2>Thank you, {{ order.name }}!</h2><p>Order #{{ order.id }} for ₹{{ order.total }} is confirmed (mock payment, card ending {{ order.card_last4 }}).</p>
+<a href="{{ url_for('home') }}">Continue shopping</a>{% endblock %}

@@ -1,0 +1,3 @@
+{% extends "base.html" %}{% block content %}<h2>Checkout - ₹{{ total }}</h2><p><b>Mock payment:</b> no real card is charged. Use the test number 4242 4242 4242 4242.</p>
+<form method="post"><p><input name="name" placeholder="Name" required></p><p><input name="email" type="email" placeholder="Email" required></p>
+<p><input name="card" placeholder="Card number" required inputmode="numeric"></p><button>Pay ₹{{ total }} (mock)</button></form>{% endblock %}

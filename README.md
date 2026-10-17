@@ -6,7 +6,7 @@ My own solutions to the daily projects and exercises from the **100 Days of Code
 
 > **Not affiliated with the course.** These are independent solutions written from the publicly listed project topics. No course code, starter files, text, images or other materials are included. If you want the lessons, take the course: [100 Days of Code by Dr. Angela Yu on Udemy](https://www.udemy.com/course/100-days-of-code/).
 
-**Progress:** 75 done · 0 partial · 25 pending
+**Progress:** 100 done · 0 partial · 0 pending
 
 ## What's different from the original course approach
 
@@ -117,31 +117,31 @@ GUI days (turtle/tkinter) need a desktop; on Linux install `python3-tk`. Seleniu
 | 73 | [LEGO Dataset Analysis](day-073-lego-analysis/) | Aggregation & merging | ✅ done | Offline synthetic dataset. |
 | 74 | [Trends & Resampling](day-074-google-trends-resampling/) | Time series | ✅ done | Offline synthetic dataset. |
 | 75 | [App Store Analysis](day-075-plotly-app-store/) | Plotly | ✅ done | Offline synthetic dataset; charts saved as HTML. |
-| 76 | NumPy N-dimensional arrays | NumPy | ⏳ pending |  |
-| 77 | Movie Budgets & Revenue | Seaborn & regression | ⏳ pending | Offline synthetic dataset. |
-| 78 | Nobel Prize Analysis | Data analysis | ⏳ pending | Offline synthetic dataset. |
-| 79 | Handwashing Discovery | Statistics | ⏳ pending | Offline synthetic dataset modelled on the story. |
-| 80 | House Price Prediction | Multivariable regression | ⏳ pending | Offline synthetic dataset. |
-| 81 | US Police Data Analysis | Capstone: data | ⏳ pending | Offline synthetic dataset. |
-| 82 | Text to Morse Code | Portfolio | ⏳ pending |  |
-| 83 | Tic Tac Toe | Portfolio | ⏳ pending |  |
-| 84 | Image Watermarker | Portfolio | ⏳ pending | GUI. Core watermark function also works from the CLI. |
-| 85 | Typing Speed Test | Portfolio | ⏳ pending | GUI. |
-| 86 | Breakout | Portfolio | ⏳ pending | GUI. |
-| 87 | Cafe & Wi-Fi Website | Portfolio | ⏳ pending |  |
-| 88 | To-Do List Website | Portfolio | ⏳ pending |  |
-| 89 | Disappearing Text Writing App | Portfolio | ⏳ pending | GUI. |
-| 90 | PDF to Audiobook | Portfolio | ⏳ pending | Offline (replaced cloud TTS APIs with a local engine: espeak/pyttsx3 if present, else a WAV tone fallback). |
-| 91 | Image Colour Palette | Portfolio | ⏳ pending |  |
-| 92 | Custom Web Scraper | Portfolio | ⏳ pending | Offline (bundled sample site). |
-| 93 | Dino Game Bot | Portfolio | ⏳ pending | Offline (local dino-runner page). Selenium (local mock). |
-| 94 | Space Invaders | Portfolio | ⏳ pending | GUI. |
-| 95 | Custom API-based Website | Portfolio | ⏳ pending | API-free (the site serves and consumes its own local JSON API). |
-| 96 | Online Shop | Portfolio | ⏳ pending | Account-free (replaced Stripe with a mock local checkout). |
-| 97 | Custom Automation | Portfolio | ⏳ pending |  |
-| 98 | Custom Data Analysis | Portfolio | ⏳ pending | Offline synthetic dataset. |
-| 99 | Space Race Analysis | Portfolio | ⏳ pending | Offline synthetic dataset. |
-| 100 | Predict Earnings (Regression) | Portfolio | ⏳ pending | Offline synthetic dataset. |
+| 76 | [NumPy N-dimensional arrays](day-076-numpy-arrays/) | NumPy | ✅ done |  |
+| 77 | [Movie Budgets & Revenue](day-077-seaborn-movie-budgets/) | Seaborn & regression | ✅ done | Offline synthetic dataset. |
+| 78 | [Nobel Prize Analysis](day-078-nobel-prize-analysis/) | Data analysis | ✅ done | Offline synthetic dataset. |
+| 79 | [Handwashing Discovery](day-079-handwashing-statistics/) | Statistics | ✅ done | Offline synthetic dataset modelled on the story. |
+| 80 | [House Price Prediction](day-080-house-prices-regression/) | Multivariable regression | ✅ done | Offline synthetic dataset. |
+| 81 | [US Police Data Analysis](day-081-police-data-analysis/) | Capstone: data | ✅ done | Offline synthetic dataset. |
+| 82 | [Text to Morse Code](day-082-morse-code-converter/) | Portfolio | ✅ done |  |
+| 83 | [Tic Tac Toe](day-083-tic-tac-toe/) | Portfolio | ✅ done |  |
+| 84 | [Image Watermarker](day-084-image-watermarker/) | Portfolio | ✅ done | GUI. Core watermark function also works from the CLI. |
+| 85 | [Typing Speed Test](day-085-typing-speed-test/) | Portfolio | ✅ done | GUI. |
+| 86 | [Breakout](day-086-breakout-game/) | Portfolio | ✅ done | GUI. |
+| 87 | [Cafe & Wi-Fi Website](day-087-cafe-wifi-website/) | Portfolio | ✅ done |  |
+| 88 | [To-Do List Website](day-088-todo-list-website/) | Portfolio | ✅ done |  |
+| 89 | [Disappearing Text Writing App](day-089-disappearing-text-app/) | Portfolio | ✅ done | GUI. |
+| 90 | [PDF to Audiobook](day-090-pdf-to-audiobook/) | Portfolio | ✅ done | API-free (replaced cloud text-to-speech APIs with the OS's offline engine: espeak-ng on Linux, `say` on macOS, System.Speech on Windows). Tested on Linux only. |
+| 91 | [Image Colour Palette](day-091-image-colour-palette/) | Portfolio | ✅ done |  |
+| 92 | [Custom Web Scraper](day-092-custom-web-scraper/) | Portfolio | ✅ done | Offline (bundled sample site). |
+| 93 | [Dino Game Bot](day-093-dino-game-bot/) | Portfolio | ✅ done | Offline (local dino-runner page). Selenium (local mock). |
+| 94 | [Space Invaders](day-094-space-invaders/) | Portfolio | ✅ done | GUI. |
+| 95 | [Custom API-based Website](day-095-api-based-website/) | Portfolio | ✅ done | API-free (the site serves and consumes its own local JSON API). |
+| 96 | [Online Shop](day-096-online-shop/) | Portfolio | ✅ done | Account-free (replaced Stripe with a mock local checkout). |
+| 97 | [Custom Automation](day-097-custom-automation/) | Portfolio | ✅ done | Works on a temporary demo folder by default; always try --dry-run before pointing it at a real folder. |
+| 98 | [Custom Data Analysis](day-098-custom-data-analysis/) | Portfolio | ✅ done | Offline synthetic dataset. |
+| 99 | [Space Race Analysis](day-099-space-race-analysis/) | Portfolio | ✅ done | Offline synthetic dataset. |
+| 100 | [Predict Earnings (Regression)](day-100-earnings-regression/) | Portfolio | ✅ done | Offline synthetic dataset. |
 
 ## Verification
 

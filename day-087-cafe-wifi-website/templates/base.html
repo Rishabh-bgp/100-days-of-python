@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cafe & Wi-Fi</title>{{ bootstrap.load_css() }}</head><body>
+<nav class="navbar navbar-dark bg-dark mb-4"><div class="container"><a class="navbar-brand" href="{{ url_for('home') }}">☕ Cafe &amp; Wi-Fi</a>
+<a class="btn btn-warning btn-sm" href="{{ url_for('add') }}">Add a cafe</a></div></nav>
+<main class="container">{% with m = get_flashed_messages() %}{% for x in m %}<div class="alert alert-success">{{ x }}</div>{% endfor %}{% endwith %}
+{% block content %}{% endblock %}</main>{{ bootstrap.load_js() }}</body></html>

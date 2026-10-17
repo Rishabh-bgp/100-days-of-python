@@ -1,0 +1,8 @@
+[
+  {"id": 1, "text": "Simple is better than complex.", "author": "The Zen of Python", "tags": ["python", "design"]},
+  {"id": 2, "text": "Readability counts.", "author": "The Zen of Python", "tags": ["python"]},
+  {"id": 3, "text": "Make it work, make it right, make it fast.", "author": "Programming proverb", "tags": ["craft"]},
+  {"id": 4, "text": "Small steps every day add up to big results.", "author": "Sample author", "tags": ["habits"]},
+  {"id": 5, "text": "The best error message is the one that never shows up.", "author": "Sample author", "tags": ["ux"]},
+  {"id": 6, "text": "Write code for the person who maintains it next year.", "author": "Sample author", "tags": ["craft"]}
+]

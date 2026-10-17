@@ -6,6 +6,7 @@ Writes VERIFICATION.md.
 """
 import argparse
 import os
+import re
 import py_compile
 import shutil
 import subprocess
@@ -54,7 +55,7 @@ def main() -> int:
     targets = [str(ROOT / folder(d)) for d in days] + [str(ROOT / "tools")]
     r = subprocess.run([ruff, "check", "--select", "E9,F", "--no-cache", *targets], capture_output=True, text=True,
                        env=dict(os.environ, NO_COLOR="1"))
-    ruff_out = (r.stdout + r.stderr).strip() or ("All checks passed!" if r.returncode == 0 else "ruff failed")
+    ruff_out = re.sub(r"\x1b\[[0-9;]*m", "", r.stdout + r.stderr).strip() or ("All checks passed!" if r.returncode == 0 else "ruff failed")
     report += ["## ruff (pyflakes rules F + syntax errors E9)", "", "```", ruff_out, "```", ""]
 
     groups = [("CLI / script smoke tests (piped input)", smoke.CLI), ("Flask test-client checks", smoke.FLASK)]

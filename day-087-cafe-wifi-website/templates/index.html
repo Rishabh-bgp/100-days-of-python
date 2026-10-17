@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block content %}
+<form class="row g-2 mb-4" method="get">
+<div class="col-md-3"><input class="form-control" name="area" placeholder="Area" value="{{ args.get('area','') }}"></div>
+{% for flag, label in [('has_wifi','Wi-Fi'),('has_sockets','Sockets'),('can_take_calls','Calls OK')] %}
+<div class="col-auto form-check mt-2"><input class="form-check-input" type="checkbox" name="{{ flag }}" value="1" id="{{ flag }}" {{ 'checked' if args.get(flag) }}>
+<label class="form-check-label" for="{{ flag }}">{{ label }}</label></div>{% endfor %}
+<div class="col-auto"><button class="btn btn-primary">Filter</button></div></form>
+<div class="row g-3">{% for c in cafes %}<div class="col-md-4"><div class="card h-100"><div class="card-body">
+<h5>{{ c.name }}</h5><p class="text-muted mb-1">{{ c.location }} · {{ c.seats }} seats · {{ c.coffee_price }}</p>
+<p>{{ '📶' if c.has_wifi else '' }} {{ '🔌' if c.has_sockets else '' }} {{ '📞' if c.can_take_calls else '' }}</p>
+<a href="{{ c.map_url }}">Map</a>
+<form method="post" action="{{ url_for('delete', cafe_id=c.id) }}" class="d-inline"><button class="btn btn-link text-danger p-0 ms-3">Remove</button></form>
+</div></div></div>{% else %}<p>No cafes match.</p>{% endfor %}</div>{% endblock %}

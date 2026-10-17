@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quote Board</title>
+<style>body{font-family:Georgia,serif;max-width:720px;margin:2rem auto;padding:0 1rem;background:#fbfaf6}
+blockquote{font-size:1.6rem;border-left:4px solid #f2b544;padding-left:1rem}button{margin:.2rem}li{margin:.5rem 0}</style></head><body>
+<h1>Quote Board</h1>
+<blockquote id="quote">Loading…</blockquote><p id="author"></p>
+<button id="random">Random quote</button>
+<p>Filter by tag: {% for t in tags %}<button class="tag" data-tag="{{ t }}">#{{ t }}</button>{% endfor %}</p>
+<ul id="list"></ul>
+<script>
+async function randomQuote(){const r=await fetch('/api/quotes/random');const {quote}=await r.json();
+ document.getElementById('quote').textContent=quote.text;document.getElementById('author').textContent='- '+quote.author;}
+async function byTag(tag){const r=await fetch('/api/quotes?tag='+encodeURIComponent(tag));const {quotes}=await r.json();
+ const ul=document.getElementById('list');ul.innerHTML='';quotes.forEach(q=>{const li=document.createElement('li');li.textContent=`"${q.text}" - ${q.author}`;ul.appendChild(li);});}
+document.getElementById('random').onclick=randomQuote;
+document.querySelectorAll('.tag').forEach(b=>b.onclick=()=>byTag(b.dataset.tag));
+randomQuote();
+</script></body></html>

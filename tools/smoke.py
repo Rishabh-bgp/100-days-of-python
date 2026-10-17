@@ -48,6 +48,17 @@ CLI = [
     (63, "sqlite_basics.py", ""),
     (71, "analysis.py", ""), (72, "analysis.py", ""), (73, "analysis.py", ""), (74, "analysis.py", ""),
     (75, "analysis.py", ""),
+    (76, "analysis.py", ""), (77, "analysis.py", ""), (78, "analysis.py", ""), (79, "analysis.py", ""),
+    (80, "analysis.py", ""), (81, "analysis.py", ""),
+    (82, "main.py encode \"SOS help\"", ""), (82, "main.py decode \"... --- ...\"", ""), (82, "main.py", "e\nhello world\nd\n.... ..\nq\n"),
+    (83, "main.py", "y\n5\n1\n9\n3\n4\n6\n2\n8\n7\nn\n"),
+    (84, "main.py --demo", ""),
+    (85, "-c \"import typing_core as t; print(t.score('the quick brown fox', 'the quick brwn fox', 6))\"", ""),
+    (90, "main.py", ""),
+    (91, "palette_cli.py", ""),
+    (92, "main.py", ""),
+    (97, "main.py --demo", ""),
+    (98, "analysis.py", ""), (99, "analysis.py", ""), (100, "analysis.py", ""),
 ]
 
 GUI = [
@@ -62,6 +73,10 @@ GUI = [
     (25, "-c \"import turtle, main; answers=iter(['Texas', 'ohio', 'Exit']); turtle.Screen().textinput=lambda *a: next(answers); main.main()\"", ""),
     (27, "main.py", ""), (28, "main.py", ""), (29, "main.py", ""), (30, "main.py", ""), (31, "main.py", ""),
     (33, "quote_app.py", ""), (34, "main.py", ""),
+    (84, "main.py", ""), (85, "main.py", ""),
+    (86, "-c \"import turtle, main; main.main(max_frames=60); turtle.bye()\"", ""),
+    (89, "main.py", ""),
+    (94, "-c \"import turtle, main; main.main(max_frames=80, autoplay=True); turtle.bye()\"", ""),
 ]
 
 SEL = [
@@ -69,6 +84,7 @@ SEL = [
     (49, "main.py", ""),
     (50, "main.py", ""),
     (51, "main.py", ""), (52, "main.py", ""), (53, "main.py", ""),
+    (93, "-c \"import main; print('score', main.play(8))\"", ""),
 ]
 FLASK = [
     (54, "../tools/flask_smoke.py / /bye", ""),
@@ -87,4 +103,9 @@ FLASK = [
     (68, "../tools/flask_smoke.py / /register /login", ""),
     (69, "../tools/flask_smoke.py / /register /login /about", ""),
     (70, "../tools/flask_smoke.py / /register /login", ""),
+    (87, "../tools/flask_smoke.py / /?wifi=1", ""),
+    (88, "../tools/flask_smoke.py / /list/1", ""),
+    (91, "../tools/flask_smoke.py /", ""),
+    (95, "../tools/flask_smoke.py / /api/quotes /api/quotes/random /api/quotes/1", ""),
+    (96, "../tools/flask_smoke.py / /cart /checkout", ""),
 ]

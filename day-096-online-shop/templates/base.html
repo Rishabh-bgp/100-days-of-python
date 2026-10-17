@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dev Shop</title>
+<style>body{font-family:system-ui,sans-serif;max-width:900px;margin:1.5rem auto;padding:0 1rem}header{display:flex;justify-content:space-between;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}.card{border:1px solid #ddd;border-radius:10px;padding:1rem;text-align:center}
+.emoji{font-size:3rem}.flash{background:#fff3cd;padding:.5rem;border-radius:6px}table{width:100%;border-collapse:collapse}td,th{padding:.4rem;border-bottom:1px solid #eee;text-align:left}</style></head><body>
+<header><h1><a href="{{ url_for('home') }}" style="text-decoration:none">🛒 Dev Shop</a></h1><a href="{{ url_for('view_cart') }}">Cart</a></header>
+{% with m = get_flashed_messages() %}{% for x in m %}<p class="flash">{{ x }}</p>{% endfor %}{% endwith %}
+{% block content %}{% endblock %}<footer><small>Practice shop - mock checkout, no real payments.</small></footer></body></html>

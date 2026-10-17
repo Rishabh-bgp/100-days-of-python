@@ -27,7 +27,7 @@ def run_lines(path: Path) -> list[str]:
     if "app.py" in scripts:
         lines.append("flask --app app run      # then open http://127.0.0.1:5000")
     for s in scripts:
-        if s not in {"main.py", "app.py"} and s in {"exercises.py", "etch_a_sketch.py", "monday_motivation.py", "quote_app.py", "analysis.py", "sqlite_basics.py"}:
+        if s not in {"main.py", "app.py"} and s in {"exercises.py", "etch_a_sketch.py", "monday_motivation.py", "quote_app.py", "analysis.py", "sqlite_basics.py", "palette_cli.py", "make_sample_pdf.py"}:
             lines.append(f"python {s}")
     if not scripts and (path / "index.html").exists():
         lines.append("# open index.html in your browser, or serve the folder:")

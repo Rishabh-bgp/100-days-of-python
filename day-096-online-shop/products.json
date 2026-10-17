@@ -1,0 +1,7 @@
+[
+  {"id": 1, "name": "Python Sticker Pack", "price": 199, "emoji": "🐍", "stock": 50},
+  {"id": 2, "name": "Mechanical Keyboard (sample)", "price": 4999, "emoji": "⌨️", "stock": 5},
+  {"id": 3, "name": "Coffee Mug - 'It works on my machine'", "price": 449, "emoji": "☕", "stock": 20},
+  {"id": 4, "name": "Rubber Duck Debugger", "price": 299, "emoji": "🦆", "stock": 30},
+  {"id": 5, "name": "100 Days Notebook", "price": 349, "emoji": "📓", "stock": 15}
+]

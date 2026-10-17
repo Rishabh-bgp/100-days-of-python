@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Local Dino Runner</title>
+<style>#game{position:relative;width:800px;height:200px;border-bottom:2px solid #333;overflow:hidden;background:#fafafa}
+#dino{position:absolute;left:50px;bottom:0;width:30px;height:40px;background:#555}
+.cactus{position:absolute;bottom:0;width:18px;height:36px;background:#2a7}#score{font:20px monospace}</style></head>
+<body>
+<!-- A small T-rex-style runner written for this repo so the bot has an offline target. -->
+<div id="score">0</div><div id="game"><div id="dino"></div></div><p id="status">Press Space to start</p>
+<script>
+const game=document.getElementById('game'),dino=document.getElementById('dino');
+let y=0,vy=0,running=false,over=false,score=0,speed=6,cacti=[],spawn=0;
+function jump(){if(!running&&!over){running=true;document.getElementById('status').textContent='Running';}
+ if(y===0&&!over){vy=13;}}
+document.addEventListener('keydown',e=>{if(e.code==='Space'||e.code==='ArrowUp'){e.preventDefault();jump();}});
+function loop(){if(running&&!over){
+ vy-=0.9;y=Math.max(0,y+vy);if(y===0)vy=0;dino.style.bottom=y+'px';
+ if(--spawn<=0){const c=document.createElement('div');c.className='cactus';c.dataset.x=800;game.appendChild(c);cacti.push(c);spawn=60+Math.random()*70;}
+ for(const c of cacti){c.dataset.x=+c.dataset.x-speed;c.style.left=c.dataset.x+'px';
+  if(+c.dataset.x<80&&+c.dataset.x>32&&y<36){over=true;document.getElementById('status').textContent='GAME OVER';}}
+ cacti=cacti.filter(c=>{if(+c.dataset.x<-20){c.remove();return false;}return true;});
+ score++;speed=6+score/600;document.getElementById('score').textContent=score;}
+ requestAnimationFrame(loop);}
+loop();
+</script></body></html>
