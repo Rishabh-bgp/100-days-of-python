@@ -1,0 +1,14 @@
+[
+  {"text": "Python lists are immutable.", "answer": "False"},
+  {"text": "The Great Wall of China is visible from the Moon with the naked eye.", "answer": "False"},
+  {"text": "Water boils at 100 degrees Celsius at sea level.", "answer": "True"},
+  {"text": "In Python, 'len' is a built-in function.", "answer": "True"},
+  {"text": "Mount Everest is in the Andes.", "answer": "False"},
+  {"text": "An octopus has three hearts.", "answer": "True"},
+  {"text": "HTML is a programming language with loops and variables.", "answer": "False"},
+  {"text": "The chemical symbol for gold is Au.", "answer": "True"},
+  {"text": "Light travels faster than sound.", "answer": "True"},
+  {"text": "Bhopal is the capital of Madhya Pradesh.", "answer": "True"},
+  {"text": "A byte has 10 bits.", "answer": "False"},
+  {"text": "Venus is the hottest planet in the Solar System.", "answer": "True"}
+]

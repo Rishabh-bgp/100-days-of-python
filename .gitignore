@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Files the projects create when you run them
+outbox/
+outbox.txt
+Output/
+*.db
+*.sqlite3
+instance/
+high_score.txt
+data.txt
+data.json
+words_to_learn.csv
+states_to_learn.csv
+movies.txt
+playlists/
+workouts.csv
+habit_graph.png
+responses.csv
+output/
+generated_data/
+uploads/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
