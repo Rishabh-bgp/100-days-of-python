@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block content %}
+{% if not all_posts %}<p>No posts yet. {% if current_user.is_authenticated and current_user.id == 1 %}Write the first one!{% else %}The first user to register becomes the admin.{% endif %}</p>{% endif %}
+{% for post in all_posts %}<div class="mb-4"><a href="{{ url_for('show_post', post_id=post.id) }}" class="text-decoration-none"><h2>{{ post.title }}</h2><h5 class="text-muted">{{ post.subtitle }}</h5></a>
+<p class="small">Posted by {{ post.author.name }} on {{ post.date }}{% if current_user.is_authenticated and current_user.id == 1 %} · <a href="{{ url_for('delete_post', post_id=post.id) }}">✘</a>{% endif %}</p></div><hr>{% endfor %}
+{% if current_user.is_authenticated and current_user.id == 1 %}<a class="btn btn-primary" href="{{ url_for('add_new_post') }}">Create New Post</a>{% endif %}{% endblock %}

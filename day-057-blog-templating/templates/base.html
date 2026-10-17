@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>{% block title %}My Blog{% endblock %}</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem}.post{border-bottom:1px solid #ddd;padding:1rem 0}footer{margin-top:3rem;color:#888}</style></head>
+<body><header><a href="{{ url_for('home') }}">My Blog</a></header>
+{% block content %}{% endblock %}
+<footer>Copyright {{ year }}. Built with Flask &amp; Jinja.</footer></body></html>

@@ -20,7 +20,6 @@ Account-free (replaced Google Form/Sheet with local SQLite; Gmail with local out
 
 - `data_manager.py`
 - `destinations.csv`
-- `flight_club.db`
 - `flight_search.py`
 - `main.py`
 - `outbox.py`

@@ -24,8 +24,6 @@ API-free (replaced Pixela account + token with local SQLite and a matplotlib gra
 
 ## Files
 
-- `habit_graph.png`
-- `habits.db`
 - `main.py`
 - `requirements.txt`
 

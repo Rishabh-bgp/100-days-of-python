@@ -1,0 +1,3 @@
+{% extends "base.html" %}{% block content %}<h1>Select Movie</h1>
+{% if not options %}<p>No match in the local catalogue. <a href="{{ url_for('add') }}">Try again</a></p>{% endif %}
+<ul>{% for m in options %}<li><a href="{{ url_for('find', title=m.title) }}">{{ m.title }} - {{ m.year }}</a></li>{% endfor %}</ul>{% endblock %}

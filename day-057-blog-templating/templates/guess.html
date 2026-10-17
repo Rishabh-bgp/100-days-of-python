@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hey {{ name }},</h1>
+<h2>I think you are {{ gender }},</h2>
+<h3>and maybe {{ age }} years old.</h3>
+{% if age > 40 %}<p>Wise and experienced!</p>{% else %}<p>Young at heart!</p>{% endif %}
+<p><small>(Offline playful guess for practising templates.)</small></p>
+{% endblock %}

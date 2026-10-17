@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rishabh's Blog</title>{{ bootstrap.load_css() }}
+<style>.avatar{display:inline-flex;width:36px;height:36px;border-radius:50%;background:#2b6777;color:#fff;align-items:center;justify-content:center;font-size:.85rem;margin-right:.5rem}</style></head><body>
+<nav class="navbar navbar-dark bg-dark"><div class="container"><a class="navbar-brand" href="{{ url_for('get_all_posts') }}">Rishabh's Blog</a>
+<div class="d-flex gap-3"><a class="nav-link text-light" href="{{ url_for('about') }}">About</a>
+{% if current_user.is_authenticated %}<span class="text-light">Hi {{ current_user.name }}</span><a class="nav-link text-light" href="{{ url_for('logout') }}">Log Out</a>
+{% else %}<a class="nav-link text-light" href="{{ url_for('login') }}">Login</a><a class="nav-link text-light" href="{{ url_for('register') }}">Register</a>{% endif %}</div></div></nav>
+<main class="container py-5">{% with msgs = get_flashed_messages() %}{% for m in msgs %}<div class="alert alert-warning">{{ m }}</div>{% endfor %}{% endwith %}
+{% block content %}{% endblock %}</main>{{ bootstrap.load_js() }}</body></html>

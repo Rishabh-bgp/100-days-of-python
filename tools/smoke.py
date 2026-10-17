@@ -44,7 +44,12 @@ CLI = [
     (45, "main.py", ""), (45, "exercises.py", ""),
     (46, "main.py", "2000-08-12\n"),
     (47, "main.py", ""),
+    (54, "exercises.py", ""),
+    (63, "sqlite_basics.py", ""),
+    (71, "analysis.py", ""), (72, "analysis.py", ""), (73, "analysis.py", ""), (74, "analysis.py", ""),
+    (75, "analysis.py", ""),
 ]
+
 GUI = [
     (18, "-c \"import turtle, main; turtle.tracer(0); main.paint(); turtle.update(); turtle.bye()\"", ""),
     (18, "-c \"import turtle, exercises as e; turtle.tracer(0); turtle.colormode(255); t=turtle.Turtle(); e.square(t); e.dashed_line(t); e.shapes(t); e.random_walk(t,20); e.spirograph(t,30); turtle.bye()\"", ""),
@@ -63,5 +68,23 @@ SEL = [
     (48, "main.py", ""), (48, "exercises.py", ""),
     (49, "main.py", ""),
     (50, "main.py", ""),
+    (51, "main.py", ""), (52, "main.py", ""), (53, "main.py", ""),
 ]
-FLASK = []
+FLASK = [
+    (54, "../tools/flask_smoke.py / /bye", ""),
+    (55, "../tools/flask_smoke.py / /3 /greet/Rishabh/25", ""),
+    (56, "../tools/flask_smoke.py /", ""),
+    (57, "../tools/flask_smoke.py / /post/1 /guess/rishabh", ""),
+    (58, "../tools/flask_smoke.py /", ""),
+    (59, "../tools/flask_smoke.py / /post/2 /about /contact", ""),
+    (60, "../tools/flask_smoke.py / /contact", ""),
+    (61, "../tools/flask_smoke.py / /login", ""),
+    (62, "../tools/flask_smoke.py / /add /cafes", ""),
+    (63, "../tools/flask_smoke.py / /add", ""),
+    (64, "../tools/flask_smoke.py / /add /edit?id=1", ""),
+    (66, "../tools/flask_smoke.py / /random /all /search?loc=MG", ""),
+    (67, "../tools/flask_smoke.py / /post/1 /new-post /edit-post/1", ""),
+    (68, "../tools/flask_smoke.py / /register /login", ""),
+    (69, "../tools/flask_smoke.py / /register /login /about", ""),
+    (70, "../tools/flask_smoke.py / /register /login", ""),
+]

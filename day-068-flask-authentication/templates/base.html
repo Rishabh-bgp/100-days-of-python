@@ -1,0 +1,5 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Flask Auth</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:2rem auto}.flash{color:#b00}nav a{margin-right:1rem}</style></head>
+<body><nav><a href="{{ url_for('home') }}">Home</a>{% if not logged_in %}<a href="{{ url_for('login') }}">Login</a><a href="{{ url_for('register') }}">Register</a>{% else %}<a href="{{ url_for('logout') }}">Log Out</a>{% endif %}</nav>
+{% with messages = get_flashed_messages() %}{% for m in messages %}<p class="flash">{{ m }}</p>{% endfor %}{% endwith %}
+{% block content %}{% endblock %}</body></html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Rishabh's Blog{% endblock %}</title>{{ bootstrap.load_css() }}
+<style>header.masthead{background:linear-gradient(120deg,#1f4e5f,#52ab98);color:#fff;padding:5rem 0}</style></head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"><div class="container">
+<a class="navbar-brand" href="{{ url_for('home') }}">Rishabh's Blog</a>
+<div class="navbar-nav"><a class="nav-link" href="{{ url_for('home') }}">Home</a>
+<a class="nav-link" href="{{ url_for('about') }}">About</a><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></div></div></nav>
+<header class="masthead text-center"><div class="container">{% block header %}<h1>Rishabh's Blog</h1><p class="lead">A collection of random musings.</p>{% endblock %}</div></header>
+<main class="container py-5">{% block content %}{% endblock %}</main>
+<footer class="text-center text-muted py-4 border-top">© 2026 Rishabh Aryan</footer>{{ bootstrap.load_js() }}</body></html>

@@ -1,0 +1,5 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rishabh's Blog</title>{{ bootstrap.load_css() }}</head><body>
+<nav class="navbar navbar-dark bg-dark"><div class="container"><a class="navbar-brand" href="{{ url_for('get_all_posts') }}">Rishabh's Blog</a>
+<a class="btn btn-outline-light btn-sm" href="{{ url_for('add_new_post') }}">New Post</a></div></nav>
+<main class="container py-5">{% block content %}{% endblock %}</main>{{ bootstrap.load_js() }}</body></html>

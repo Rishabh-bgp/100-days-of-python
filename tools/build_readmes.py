@@ -5,6 +5,7 @@ Status per day lives in tools/status.json ("done", "partial" or "pending").
 """
 import ast
 import json
+import subprocess
 from pathlib import Path
 
 from days import DAYS, GUI, SEL, folder
@@ -26,7 +27,7 @@ def run_lines(path: Path) -> list[str]:
     if "app.py" in scripts:
         lines.append("flask --app app run      # then open http://127.0.0.1:5000")
     for s in scripts:
-        if s not in {"main.py", "app.py"} and s in {"exercises.py", "etch_a_sketch.py", "monday_motivation.py", "quote_app.py", "analysis.py"}:
+        if s not in {"main.py", "app.py"} and s in {"exercises.py", "etch_a_sketch.py", "monday_motivation.py", "quote_app.py", "analysis.py", "sqlite_basics.py"}:
             lines.append(f"python {s}")
     if not scripts and (path / "index.html").exists():
         lines.append("# open index.html in your browser, or serve the folder:")
@@ -48,7 +49,10 @@ def description(path: Path) -> str:
 def day_readme(day: int) -> str:
     slug, title, topic, concepts, notes = DAYS[day]
     path = ROOT / folder(day)
-    files = sorted(p.name for p in path.iterdir() if p.is_file() and p.name != "README.md")
+    candidates = [p for p in path.iterdir() if p.name != "README.md" and p.name != "__pycache__"]
+    ignored = set(subprocess.run(["git", "check-ignore", *map(str, candidates)], cwd=ROOT, capture_output=True,
+                                 text=True).stdout.split()) if candidates else set()
+    files = sorted(p.name + ("/" if p.is_dir() else "") for p in candidates if str(p) not in ignored)
     parts = [f"# Day {day}: {title}", ""]
     desc = description(path)
     if desc:

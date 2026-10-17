@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block header %}<h1>{{ post.title }}</h1><p class="lead">{{ post.subtitle }}</p>{% endblock %}
+{% block content %}<p>{{ post.body }}</p>{% endblock %}

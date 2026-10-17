@@ -18,8 +18,8 @@ Offline (scrapes bundled sample HTML; selectors have fallbacks).
 
 - `exercises.py`
 - `main.py`
-- `movies.txt`
 - `requirements.txt`
+- `sample_pages/`
 
 ## Run
 

@@ -1,0 +1,5 @@
+[
+  {"id": 1, "title": "Why I started 100 days of Python", "subtitle": "Small daily steps", "body": "Writing a little code every day turned out to be easier than one long weekend session. This post is sample content for the templating exercise."},
+  {"id": 2, "title": "What turtle graphics taught me", "subtitle": "Coordinates and loops", "body": "Drawing shapes is a surprisingly good way to understand loops, angles and functions. Sample content."},
+  {"id": 3, "title": "Flask in one afternoon", "subtitle": "Routes and templates", "body": "Routes map URLs to functions, and Jinja turns data into HTML. Sample content."}
+]

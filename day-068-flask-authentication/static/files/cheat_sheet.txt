@@ -1,0 +1,5 @@
+Python cheat sheet (original, for the download demo)
+- list comprehension: [x * 2 for x in items if x > 0]
+- dict comprehension: {k: v for k, v in pairs}
+- f-string: f"{name} is {age}"
+- with open("file.txt") as fh: text = fh.read()

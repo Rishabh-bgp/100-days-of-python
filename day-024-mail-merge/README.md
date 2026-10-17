@@ -12,6 +12,7 @@ Uses `pathlib`.
 
 ## Files
 
+- `Input/`
 - `exercises.py`
 - `main.py`
 

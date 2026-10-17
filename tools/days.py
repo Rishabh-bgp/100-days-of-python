@@ -61,7 +61,7 @@ DAYS = {
     55: ("higher-lower-urls", "Higher Lower (URLs)", "Flask routing", "URL variables, converters, HTML in responses", ""),
     56: ("name-card-site", "Name Card Website", "Templates & static files", "render_template, static files", ""),
     57: ("blog-templating", "Blog Templating", "Jinja", "Jinja expressions, loops, URL building", "API-free (replaced agify/genderize/npoint APIs with bundled JSON and a local guess function)."),
-    58: ("tindog-bootstrap", "TinDog (Bootstrap)", "Bootstrap", "Bootstrap 5 grid, components", "Bootstrap 5 from CDN-free local markup (no external account)."),
+    58: ("tindog-bootstrap", "TinDog (Bootstrap)", "Bootstrap", "Bootstrap 5 grid, components", "Bootstrap 5 served locally by Bootstrap-Flask (no CDN needed)."),
     59: ("blog-capstone-styling", "Blog Capstone pt 2", "Styling a blog", "template inheritance, Bootstrap theme", ""),
     60: ("html-forms-flask", "HTML Forms + Flask", "POST requests", "forms, request.form, contact form", "Account-free (contact form emails go to a local outbox)."),
     61: ("flask-wtf-login", "Flask-WTF Login", "Flask-WTF", "WTForms 3 validators, CSRF, Bootstrap-Flask", "Bootstrap-Flask replaces the dead Flask-Bootstrap."),

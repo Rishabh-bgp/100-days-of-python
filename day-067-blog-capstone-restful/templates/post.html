@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block content %}<h1>{{ post.title }}</h1><h4 class="text-muted">{{ post.subtitle }}</h4>
+<p class="small">Posted by {{ post.author }} on {{ post.date }}</p>
+{% if post.img_url %}<img src="{{ post.img_url }}" alt="" class="img-fluid mb-3">{% endif %}
+<div>{% for para in post.body.split('\n') %}<p>{{ para }}</p>{% endfor %}</div>
+<a class="btn btn-primary" href="{{ url_for('edit_post', post_id=post.id) }}">Edit Post</a>{% endblock %}

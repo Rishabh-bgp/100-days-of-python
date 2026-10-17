@@ -16,6 +16,7 @@ Account-free (replaced Gmail SMTP login with a local outbox/ folder or a local a
 ## Files
 
 - `birthdays.csv`
+- `letter_templates/`
 - `main.py`
 - `monday_motivation.py`
 - `outbox.py`

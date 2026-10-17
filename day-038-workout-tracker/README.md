@@ -20,8 +20,6 @@ API-free (replaced Nutritionix with a local MET table parser; Google Sheets/Shee
 
 - `exercises_met.csv`
 - `main.py`
-- `workouts.csv`
-- `workouts.db`
 
 ## Run
 

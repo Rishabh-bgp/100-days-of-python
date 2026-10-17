@@ -8,6 +8,8 @@ import time
 
 from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 import mock_site
 from browser import make_driver
@@ -23,7 +25,7 @@ def run(max_swipes: int = 100) -> int:
             driver.find_element(By.ID, "password").send_keys("demo-password")
             driver.find_element(By.ID, "login").click()
             # popups stack: the newest (location) is on top, so close it first
-            driver.find_element(By.ID, "allow-location").click()
+            WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "allow-location"))).click()
             driver.find_element(By.ID, "accept-cookies").click()
             for _ in range(max_swipes):
                 time.sleep(0.3)

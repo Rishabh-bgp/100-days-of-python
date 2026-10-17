@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block content %}
+<h1>My Top 10 Movies</h1><p class="text-muted">These are my all-time favourite movies.</p>
+<div class="row g-4">{% for movie in movies %}
+<div class="col-md-4"><div class="card h-100">
+<div class="poster" style="background:hsl({{ (movie.title|length * 37) % 360 }},55%,40%)">{{ movie.title }}</div>
+<div class="card-body"><h5>#{{ movie.ranking }} {{ movie.title }} <small class="text-muted">({{ movie.year }})</small></h5>
+<p><b>{{ movie.rating if movie.rating is not none else '-' }}</b>/10 · <i>"{{ movie.review or '' }}"</i></p>
+<p class="small">{{ movie.description }}</p>
+<a class="btn btn-sm btn-primary" href="{{ url_for('edit', id=movie.id) }}">Update</a>
+<a class="btn btn-sm btn-danger" href="{{ url_for('delete', id=movie.id) }}">Delete</a></div></div></div>
+{% endfor %}</div><a class="btn btn-success mt-4" href="{{ url_for('add') }}">Add Movie</a>{% endblock %}
