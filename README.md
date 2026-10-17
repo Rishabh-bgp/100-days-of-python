@@ -6,7 +6,7 @@ My own solutions to the daily projects and exercises from the **100 Days of Code
 
 > **Not affiliated with the course.** These are independent solutions written from the publicly listed project topics. No course code, starter files, text, images or other materials are included. If you want the lessons, take the course: [100 Days of Code by Dr. Angela Yu on Udemy](https://www.udemy.com/course/100-days-of-code/).
 
-**Progress:** 25 done · 0 partial · 75 pending
+**Progress:** 50 done · 0 partial · 50 pending
 
 ## What's different from the original course approach
 
@@ -67,31 +67,31 @@ GUI days (turtle/tkinter) need a desktop; on Linux install `python3-tk`. Seleniu
 | 23 | [Turtle Crossing](day-023-turtle-crossing/) | Capstone 2 | ✅ done | GUI. |
 | 24 | [Mail Merge](day-024-mail-merge/) | Files & paths | ✅ done | Uses `pathlib`. |
 | 25 | [U.S. States Game](day-025-us-states-game/) | CSV & pandas | ✅ done | Draws positions from a CSV (no course image); squirrel census uses a synthetic dataset. Map game is GUI. |
-| 26 | NATO Alphabet | Comprehensions | ⏳ pending |  |
-| 27 | Mile to Km Converter | tkinter, *args, **kwargs | ⏳ pending | GUI. |
-| 28 | Pomodoro Timer | tkinter events | ⏳ pending | Tomato drawn on the canvas instead of an image asset. GUI. |
-| 29 | Password Manager | tkinter layout | ⏳ pending | tkinter clipboard replaces `pyperclip`. GUI. |
-| 30 | Password Manager (JSON) | Errors & JSON | ⏳ pending | GUI. |
-| 31 | Flash Card App | Capstone 3 | ⏳ pending | Original French word list; card faces drawn on canvas. GUI. |
-| 32 | Automated Birthday Wisher | Email & datetime | ⏳ pending | Account-free (replaced Gmail SMTP login with a local outbox/ folder or a local aiosmtpd debug server). |
-| 33 | ISS Overhead Notifier | APIs (offline) | ⏳ pending | API-free (replaced Open Notify + sunrise-sunset.org with offline orbit and NOAA solar formulas; Kanye API with bundled quotes; email with local outbox). |
-| 34 | Quizzler | GUI + type hints | ⏳ pending | API-free (replaced Open Trivia DB with bundled questions.json). GUI. |
-| 35 | Rain Alert | API keys & SMS (offline) | ⏳ pending | API-free (replaced OpenWeather with a bundled sample forecast; Twilio SMS with local outbox). |
-| 36 | Stock News Alert | Capstone: APIs (offline) | ⏳ pending | API-free (replaced Alpha Vantage, NewsAPI and Twilio with bundled sample prices/news and local outbox). |
-| 37 | Habit Tracker | HTTP verbs (offline) | ⏳ pending | API-free (replaced Pixela account + token with local SQLite and a matplotlib graph). |
-| 38 | Workout Tracker | NLP & sheets (offline) | ⏳ pending | API-free (replaced Nutritionix with a local MET table parser; Google Sheets/Sheety with SQLite + CSV). |
-| 39 | Flight Deal Finder | Classes working together | ⏳ pending | API-free (replaced Sheety, Tequila/Kiwi (shut down) and Twilio with local CSVs, synthetic flight data and outbox). |
-| 40 | Flight Club | Capstone: users | ⏳ pending | Account-free (replaced Google Form/Sheet with local SQLite; Gmail with local outbox). |
-| 41 | Personal Site (HTML) | HTML intro | ⏳ pending |  |
-| 42 | Intermediate HTML | HTML tables & forms | ⏳ pending |  |
-| 43 | Intro to CSS | CSS basics | ⏳ pending |  |
-| 44 | Intermediate CSS | Box model & layout | ⏳ pending |  |
-| 45 | Top Movies Scraper | BeautifulSoup | ⏳ pending | Offline (scrapes bundled sample HTML; selectors have fallbacks). |
-| 46 | Musical Time Machine | Scraping + playlists | ⏳ pending | Account-free (replaced Billboard scraping + Spotify account/OAuth with a bundled fictional chart and local CSV/M3U playlists). |
-| 47 | Price Tracker | Scraping + alerts | ⏳ pending | Account-free (replaced live Amazon scraping + Gmail with a bundled product page and local outbox). |
-| 48 | Cookie Clicker Bot | Selenium | ⏳ pending | Offline (drives a bundled local cookie-clicker page). Selenium (local mock). |
-| 49 | Job Application Bot | Selenium automation | ⏳ pending | Account-free (replaced LinkedIn with 'MockedIn', a local Flask mock with a fake login). Selenium (local mock). |
-| 50 | Auto-Swipe Bot | Selenium popups | ⏳ pending | Account-free (replaced Tinder with 'Swipr', a local Flask mock). Selenium (local mock). |
+| 26 | [NATO Alphabet](day-026-nato-alphabet/) | Comprehensions | ✅ done |  |
+| 27 | [Mile to Km Converter](day-027-mile-to-km-converter/) | tkinter, *args, **kwargs | ✅ done | GUI. |
+| 28 | [Pomodoro Timer](day-028-pomodoro-timer/) | tkinter events | ✅ done | Tomato drawn on the canvas instead of an image asset. GUI. |
+| 29 | [Password Manager](day-029-password-manager/) | tkinter layout | ✅ done | tkinter clipboard replaces `pyperclip`. GUI. |
+| 30 | [Password Manager (JSON)](day-030-password-manager-json/) | Errors & JSON | ✅ done | GUI. |
+| 31 | [Flash Card App](day-031-flash-card-app/) | Capstone 3 | ✅ done | Original French word list; card faces drawn on canvas. GUI. |
+| 32 | [Automated Birthday Wisher](day-032-birthday-wisher/) | Email & datetime | ✅ done | Account-free (replaced Gmail SMTP login with a local outbox/ folder or a local aiosmtpd debug server). |
+| 33 | [ISS Overhead Notifier](day-033-iss-overhead-notifier/) | APIs (offline) | ✅ done | API-free (replaced Open Notify + sunrise-sunset.org with offline orbit and NOAA solar formulas; Kanye API with bundled quotes; email with local outbox). |
+| 34 | [Quizzler](day-034-quizzler-gui/) | GUI + type hints | ✅ done | API-free (replaced Open Trivia DB with bundled questions.json). GUI. |
+| 35 | [Rain Alert](day-035-rain-alert/) | API keys & SMS (offline) | ✅ done | API-free (replaced OpenWeather with a bundled sample forecast; Twilio SMS with local outbox). |
+| 36 | [Stock News Alert](day-036-stock-news-alert/) | Capstone: APIs (offline) | ✅ done | API-free (replaced Alpha Vantage, NewsAPI and Twilio with bundled sample prices/news and local outbox). |
+| 37 | [Habit Tracker](day-037-habit-tracker/) | HTTP verbs (offline) | ✅ done | API-free (replaced Pixela account + token with local SQLite and a matplotlib graph). |
+| 38 | [Workout Tracker](day-038-workout-tracker/) | NLP & sheets (offline) | ✅ done | API-free (replaced Nutritionix with a local MET table parser; Google Sheets/Sheety with SQLite + CSV). |
+| 39 | [Flight Deal Finder](day-039-flight-deal-finder/) | Classes working together | ✅ done | API-free (replaced Sheety, Tequila/Kiwi (shut down) and Twilio with local CSVs, synthetic flight data and outbox). |
+| 40 | [Flight Club](day-040-flight-club/) | Capstone: users | ✅ done | Account-free (replaced Google Form/Sheet with local SQLite; Gmail with local outbox). |
+| 41 | [Personal Site (HTML)](day-041-html-personal-site/) | HTML intro | ✅ done |  |
+| 42 | [Intermediate HTML](day-042-intermediate-html/) | HTML tables & forms | ✅ done |  |
+| 43 | [Intro to CSS](day-043-intro-to-css/) | CSS basics | ✅ done |  |
+| 44 | [Intermediate CSS](day-044-intermediate-css/) | Box model & layout | ✅ done |  |
+| 45 | [Top Movies Scraper](day-045-web-scraping-top-movies/) | BeautifulSoup | ✅ done | Offline (scrapes bundled sample HTML; selectors have fallbacks). |
+| 46 | [Musical Time Machine](day-046-musical-time-machine/) | Scraping + playlists | ✅ done | Account-free (replaced Billboard scraping + Spotify account/OAuth with a bundled fictional chart and local CSV/M3U playlists). |
+| 47 | [Price Tracker](day-047-price-tracker/) | Scraping + alerts | ✅ done | Account-free (replaced live Amazon scraping + Gmail with a bundled product page and local outbox). |
+| 48 | [Cookie Clicker Bot](day-048-selenium-cookie-clicker/) | Selenium | ✅ done | Offline (drives a bundled local cookie-clicker page). Selenium (local mock). |
+| 49 | [Job Application Bot](day-049-job-application-bot/) | Selenium automation | ✅ done | Account-free (replaced LinkedIn with 'MockedIn', a local Flask mock with a fake login). Selenium (local mock). |
+| 50 | [Auto-Swipe Bot](day-050-dating-swipe-bot/) | Selenium popups | ✅ done | Account-free (replaced Tinder with 'Swipr', a local Flask mock). Selenium (local mock). |
 | 51 | Internet Speed Complaint Bot | Selenium + classes | ⏳ pending | Account-free (replaced speedtest.net + Twitter/X with a local mock speed page and 'Chirp' mock social site). Selenium (local mock). |
 | 52 | Follower Bot | Selenium scrolling | ⏳ pending | Account-free (replaced Instagram with 'Pictagram', a local Flask mock). Selenium (local mock). |
 | 53 | Data Entry Automation | Capstone: scrape + automate | ⏳ pending | Account-free (replaced Zillow clone + Google Forms with bundled listings HTML and a local Flask form that saves to CSV). Selenium (local mock). |

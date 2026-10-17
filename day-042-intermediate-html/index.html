@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Intermediate HTML</title></head>
+<body>
+  <h1>Weekly study plan</h1>
+  <table>
+    <thead><tr><th>Day</th><th>Topic</th><th>Hours</th></tr></thead>
+    <tbody>
+      <tr><td>Monday</td><td>Python functions</td><td>2</td></tr>
+      <tr><td>Tuesday</td><td>HTML tables</td><td>1</td></tr>
+      <tr><td>Wednesday</td><td>CSS selectors</td><td>1.5</td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="2">Total</td><td>4.5</td></tr></tfoot>
+  </table>
+
+  <h2>Nested list</h2>
+  <ul>
+    <li>Front end
+      <ul><li>HTML</li><li>CSS</li></ul>
+    </li>
+    <li>Back end
+      <ul><li>Python</li><li>Flask</li></ul>
+    </li>
+  </ul>
+
+  <h2>Sign up form</h2>
+  <form action="#" method="get">
+    <label for="name">Name</label> <input id="name" name="name" type="text" required>
+    <label for="email">Email</label> <input id="email" name="email" type="email">
+    <label for="level">Level</label>
+    <select id="level" name="level"><option>Beginner</option><option>Intermediate</option></select>
+    <input type="checkbox" id="news" name="news"> <label for="news">Newsletter</label>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

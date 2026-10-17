@@ -1,0 +1,3 @@
+pandas==3.0.6
+# optional, only for LOCAL_SMTP=1 testing:
+# aiosmtpd==1.4.6

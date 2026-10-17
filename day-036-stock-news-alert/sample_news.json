@@ -1,0 +1,24 @@
+{
+ "articles": [
+  {
+   "title": "Fictional Motors announces new battery plant",
+   "description": "The made-up automaker said construction starts next year.",
+   "publishedAt": "2026-10-08"
+  },
+  {
+   "title": "Analysts debate Fictional Motors delivery numbers",
+   "description": "Quarterly deliveries came in below some estimates in this sample article.",
+   "publishedAt": "2026-10-08"
+  },
+  {
+   "title": "Fictional Motors CEO speaks at sample tech conference",
+   "description": "Comments focused on autonomy and software updates.",
+   "publishedAt": "2026-10-07"
+  },
+  {
+   "title": "EV sector roundup (sample news)",
+   "description": "Several imaginary companies reported mixed results.",
+   "publishedAt": "2026-10-06"
+  }
+ ]
+}

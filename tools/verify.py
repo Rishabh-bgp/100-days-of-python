@@ -52,7 +52,8 @@ def main() -> int:
 
     ruff = shutil.which("ruff") or str(Path(sys.executable).with_name("ruff"))
     targets = [str(ROOT / folder(d)) for d in days] + [str(ROOT / "tools")]
-    r = subprocess.run([ruff, "check", "--select", "E9,F", "--no-cache", *targets], capture_output=True, text=True)
+    r = subprocess.run([ruff, "check", "--select", "E9,F", "--no-cache", *targets], capture_output=True, text=True,
+                       env=dict(os.environ, NO_COLOR="1"))
     ruff_out = (r.stdout + r.stderr).strip() or ("All checks passed!" if r.returncode == 0 else "ruff failed")
     report += ["## ruff (pyflakes rules F + syntax errors E9)", "", "```", ruff_out, "```", ""]
 

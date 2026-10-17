@@ -1,0 +1,19 @@
+keyword,exercise,met,default_minutes
+run,Running,9.8,30
+ran,Running,9.8,30
+jog,Jogging,7.0,30
+walk,Walking,3.5,30
+walked,Walking,3.5,30
+cycl,Cycling,7.5,30
+bike,Cycling,7.5,30
+swim,Swimming,6.0,30
+yoga,Yoga,2.5,30
+skipp,Skipping rope,11.0,15
+jump rope,Skipping rope,11.0,15
+weights,Weight training,5.0,30
+lift,Weight training,5.0,30
+dance,Dancing,5.5,30
+hike,Hiking,6.0,60
+football,Football,7.0,60
+cricket,Cricket,5.0,60
+badminton,Badminton,5.5,45

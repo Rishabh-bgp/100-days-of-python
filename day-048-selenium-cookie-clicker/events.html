@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Sample upcoming events</title></head>
+<body><!-- Local practice page -->
+<div class="event-widget"><h2>Upcoming Events</h2><ul class="menu">
+<li><time datetime="2026-10-24">24 Oct</time><a href="#">PyData Bhopal meetup</a></li>
+<li><time datetime="2026-11-02">2 Nov</time><a href="#">Django Girls workshop</a></li>
+<li><time datetime="2026-11-15">15 Nov</time><a href="#">PyCon India sprints</a></li>
+<li><time datetime="2026-12-01">1 Dec</time><a href="#">Advent of Code kickoff</a></li>
+</ul></div>
+<form id="signup"><input name="fName" placeholder="First name"><input name="lName" placeholder="Last name">
+<input name="email" placeholder="Email"><button type="submit">Sign up</button></form>
+<p id="thanks" hidden>Thanks for signing up!</p>
+<script>document.getElementById("signup").onsubmit=e=>{e.preventDefault();document.getElementById("thanks").hidden=false;};</script>
+</body></html>

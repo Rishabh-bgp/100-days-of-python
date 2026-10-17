@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Local Cookie Clicker</title>
+<style>body{font-family:sans-serif;display:flex;gap:40px;padding:20px}#cookie{width:160px;height:160px;border-radius:50%;background:#c68642;border:none;cursor:pointer}#store div{padding:6px;margin:4px;border:1px solid #ccc}#store div.grayed{opacity:.4}</style></head>
+<body>
+<!-- A tiny cookie-clicker written for this repo so the Selenium bot has an offline target. -->
+<div><button id="cookie" aria-label="cookie"></button><div id="money">0</div><div id="cps">per second: 0</div></div>
+<div id="store"></div>
+<script>
+const items=[["Cursor",15,0.2],["Grandma",100,1],["Factory",500,8],["Mine",2000,47],["Shipment",7000,260],["Alchemy lab",50000,1400],["Portal",1000000,7800],["Time machine",123456789,44000]];
+let money=0,cps=0;
+const store=document.getElementById("store");
+items.forEach(([name,cost,rate],i)=>{const d=document.createElement("div");d.id="buy"+name.replace(" ","");d.dataset.cost=cost;d.innerHTML="<b>"+name+" - "+cost.toLocaleString()+"</b>";d.onclick=()=>{let c=+d.dataset.cost;if(money>=c){money-=c;cps+=rate;d.dataset.cost=Math.ceil(c*1.15);d.querySelector("b").textContent=name+" - "+(+d.dataset.cost).toLocaleString();render();}};store.appendChild(d);});
+function render(){document.getElementById("money").textContent=Math.floor(money).toLocaleString();document.getElementById("cps").textContent="per second: "+cps.toFixed(1);store.querySelectorAll("div").forEach(d=>d.classList.toggle("grayed",money<+d.dataset.cost));}
+document.getElementById("cookie").onclick=()=>{money+=1;render();};
+setInterval(()=>{money+=cps/10;render();},100);
+render();
+</script></body></html>

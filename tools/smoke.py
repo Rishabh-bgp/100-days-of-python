@@ -23,8 +23,28 @@ CLI = [
     (24, "main.py", ""), (24, "exercises.py", ""),
     (25, "exercises.py", ""),
     (25, "-c \"import main; d=main.load_states(); print(main.check_guess(d,'ohio')); print(len(main.missing_states(d,{'Ohio'})))\"", ""),
+    (26, "main.py", "hello world\n"), (26, "exercises.py", ""),
+    (27, "exercises.py", ""),
+    (28, "-c \"import main; print(main.session_for(1), main.session_for(8), main.fmt(125))\"", ""),
+    (29, "-c \"import main, tempfile, pathlib; p=pathlib.Path(tempfile.mkdtemp())/'d.txt'; main.save_entry('site','a@b.c',main.generate_password(),p); print(p.read_text())\"", ""),
+    (30, "exercises.py", ""),
+    (30, "-c \"import vault, tempfile, pathlib; p=pathlib.Path(tempfile.mkdtemp())/'d.json'; vault.add('github','me@x.com','pw1',p); print(vault.find('github',p), vault.find('nope',p))\"", ""),
+    (31, "-c \"import deck; d=deck.Deck(); c=d.next_card(); d.mark_known(save=False); print(c, len(d.cards))\"", ""),
+    (32, "main.py 2026-10-18", ""), (32, "monday_motivation.py --force", ""),
+    (33, "main.py 6", ""),
+    (33, "-c \"from astro import *; from datetime import datetime, timezone; print(sun_times(23.26, 77.41, datetime(2026,6,21,tzinfo=timezone.utc)))\"", ""),
+    (34, "-c \"from quiz_brain import *; q=QuizBrain(load_questions()); print(q.next_question(), q.check_answer('True'))\"", ""),
+    (35, "main.py", ""), (35, "main.py sample_forecast_dry.json", ""),
+    (36, "main.py", ""),
+    (37, "main.py demo", ""), (37, "main.py add 2026-01-01 3", ""), (37, "main.py update 2026-01-01 4.5", ""),
+    (37, "main.py delete 2026-01-01", ""),
+    (38, "main.py", "ran 5 km and did yoga for 20 minutes, then cycled for 1 hour\n"),
+    (39, "main.py", ""),
+    (40, "main.py signup", "Asha\nRao\nasha@example.com\nasha@example.com\n"), (40, "main.py deals", ""),
+    (45, "main.py", ""), (45, "exercises.py", ""),
+    (46, "main.py", "2000-08-12\n"),
+    (47, "main.py", ""),
 ]
-
 GUI = [
     (18, "-c \"import turtle, main; turtle.tracer(0); main.paint(); turtle.update(); turtle.bye()\"", ""),
     (18, "-c \"import turtle, exercises as e; turtle.tracer(0); turtle.colormode(255); t=turtle.Turtle(); e.square(t); e.dashed_line(t); e.shapes(t); e.random_walk(t,20); e.spirograph(t,30); turtle.bye()\"", ""),
@@ -34,7 +54,14 @@ GUI = [
     (21, "-c \"import turtle, main; main.main(max_frames=40); turtle.bye()\"", ""),
     (22, "-c \"import turtle, main, pong; pong.Ball.move_speed=0; main.main(max_frames=60); turtle.bye()\"", ""),
     (23, "-c \"import turtle, main; main.main(max_frames=40); turtle.bye()\"", ""),
+    (25, "-c \"import turtle, main; answers=iter(['Texas', 'ohio', 'Exit']); turtle.Screen().textinput=lambda *a: next(answers); main.main()\"", ""),
+    (27, "main.py", ""), (28, "main.py", ""), (29, "main.py", ""), (30, "main.py", ""), (31, "main.py", ""),
+    (33, "quote_app.py", ""), (34, "main.py", ""),
 ]
 
-SEL = []
+SEL = [
+    (48, "main.py", ""), (48, "exercises.py", ""),
+    (49, "main.py", ""),
+    (50, "main.py", ""),
+]
 FLASK = []
